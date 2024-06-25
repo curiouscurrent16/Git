@@ -1,0 +1,44 @@
+## Set Global Username and Email
+git config --global user.name "Your github userName"
+git config --global user.email "Your email"
+
+## Clone the Repository
+git clone https://github.com/username/repository.git
+cd repository
+
+## Create and Switch to a New Branch
+git checkout -b feature-branch
+
+## Make Changes and Commit
+echo "some new feature" > feature.txt
+git add feature.txt
+git commit -m "first commit"
+
+## Push the New Branch to Remote Repository
+git push origin feature-branch
+
+## Fetch Updates from Remote Repository
+git fetch
+
+## Pull Changes from Remote main Branch
+git pull origin main
+
+## Switch Back to main Branch
+git checkout main
+
+## Merge feature-branch to main branch
+git merge feature-branch
+
+## Push Updated main Branch to Remote Repository
+git push origin main
+
+## View Commit Log to Get Commit Hash
+git log
+
+## Reset main Branch to a Specific Commit
+git reset --hard abcdef1234567890abcdef1234567890abcdef12
+
+## Delete feature-branch Locally and Remotely
+git branch -d feature-branch
+git push origin --delete feature-branch
+
